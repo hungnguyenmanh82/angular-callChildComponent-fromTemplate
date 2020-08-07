@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "app12-ChildComponent-fromTemplate"
+    }
+  },
+  "defaultProject": "app12-ChildComponent-fromTemplate",
+  "cli": {
+    "analytics": "38739a48-a701-47a6-86f1-80b62f457276"
+  }
 }
