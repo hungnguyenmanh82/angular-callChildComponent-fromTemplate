@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   // để tiếp đầu ngũ là app-*  sau này search ở html dễ dàng hơn
   selector: 'app-child',
   templateUrl: './child.component.html',
-  styleUrls: ['./child.component.css'],
+  styleUrls: ['./child.component.scss'],
 })
 export class ChildComponent implements OnInit {
   numberOfClick: number = 0;

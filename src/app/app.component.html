@@ -1,5 +1,35 @@
-<button (click)="childComponent1.countClick()" class="button1"> child component 1</button>
-<button (click)="childComponent2.countClick()" class="button2"> child component 2</button>
+<h1>Reference Variable:</h1>
+<a href="https://angular.io/guide/template-reference-variables">
+  https://angular.io/guide/template-reference-variables
+</a>
+<h3>cách 1: &lt;tag #variable&gt;</h3>
+<p>
+  tag là component hoặc html tag chuẩn như &lt;input&gt;, &lt;div&gt;, &lt;image&gt;, &lt;a&gt;,...
+</p>
+<h3>cách 2: &lt;tag #variable= &ldquo;directive&rdquo;&gt;</h3>
+<p>
+  biến đại diện cho directive. Directive này cung cấp nhiều properties cho tag này. vd: ngForm,
+  Material...
+  <br />
+  Để có thể can thiệp vào tag chuẩn của html như &lt;input&gt;, &lt;div&gt;, &lt;image&gt;,
+  &lt;a&gt;,...
+  <br />
+  Material design dùng rất nhiều cách này
+</p>
+<div class="test-layout">
+  <h3>cách 1: &lt;tag #variable&gt;</h3>
+  <button (click)="childComponent1.countClick()" class="button1">child component 1</button>
+  <button (click)="childComponent2.countClick()" class="button2">child component 2</button>
+  <!-- # để chỉ biến đại diện co component đó -->
+  <app-child #childComponent1></app-child>
+  <app-child #childComponent2></app-child>
+</div>
 
-<app-child #childComponent1></app-child>
-<app-child #childComponent2></app-child>
+<div class="test-layout">
+  <h3>cách 2: &lt;tag #variable= &ldquo;directive&rdquo;&gt;</h3>
+  <p>
+    <a href="https://github.com/hungnguyenmanh82/angular-directive"
+      >https://github.com/hungnguyenmanh82/angular-directive</a
+    >
+  </p>
+</div>
