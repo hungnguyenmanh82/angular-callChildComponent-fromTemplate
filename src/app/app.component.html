@@ -26,6 +26,13 @@
 </div>
 
 <div class="test-layout">
+  <h3>cách 1: &lt;tag #variable&gt;</h3>
+  <button (click)="image.src = 'assets/image.jpg'">&lt;image #variable&gt;</button>
+  <br />
+  <img #image alt="test #variable" />
+</div>
+
+<div class="test-layout">
   <h3>cách 2: &lt;tag #variable= &ldquo;directive&rdquo;&gt;</h3>
   <p>
     <a href="https://github.com/hungnguyenmanh82/angular-directive"
